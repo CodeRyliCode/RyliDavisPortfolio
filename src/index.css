@@ -45,3 +45,33 @@ a {
   justify-content: center;
   min-height: 100vh;
 }
+.homepage .overlay h1 {
+  text-transform: uppercase;
+  font-size: 96px;
+  text-align: center;
+
+
+}
+
+.homepage .overlay p {
+  font-size: 36px;
+    text-align: center;
+
+}
+
+.homepage .overlay ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.homepage .overlay ul li {
+margin: 0 20px;
+}
+
+.homepage .overlay a {
+  font-size: 30px;
+}
+
