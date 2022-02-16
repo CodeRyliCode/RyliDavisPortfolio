@@ -1,13 +1,184 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.root {
+  --background-image: linear-gradient(
+    120deg,
+    hsl(169, 100%, 35%),
+    rgba(1, 84, 69, 0.67)
+  );
+  --background-overlay: rgba(0, 0, 0, 0.4);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+/* 100% so images don't overflow */
+}
+
+body {
+  font-family: "sans-serif";
+overflow: hidden;
+}
+
+
+a {
+  font-family: inherit;
+/* inherit checks which font family is in body and places it in anchor as well */
+  text-decoration: none;
+}
+
+
+/* Menu Button */
+.menu-btn {
+position: absolute;
+right: 80px;
+margin-top: 50px;
+z-index: 99999999;
+}
+
+.menu-btn button {
+background-color: transparent;
+font-size: 36px;
+color: #000;
+border: none;
+cursor: pointer;
+}
+
+/* Header */
+.header {
+  position: absolute;
+  right: 0;
+ height: 0;
+ overflow: hidden;
+  width: 200px;
+   
+
+ 
+}
+
+.header.open {
+    transition: all 1s ease-in-out;
+height: 100vh;
+width: 100vw;
+font-weight: bold;
+background-color: var(--background-overlay);
+
+}
+
+
+
+.header nav ul{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: 40vh;
+}
+
+
+
+/* homepage */
+.homepage {
+  background: url("./showcase.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.homepage .overlay {
+  background-image: var(--background-image);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+.homepage .overlay h1 {
+  text-transform: uppercase;
+  font-size: 96px;
+    text-align: center;
+
+}
+
+.homepage .overlay p {
+  font-size: 36px;
+    text-align: center;
+
+}
+
+.homepage .overlay ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.homepage .overlay ul li {
+margin: 0 20px;
+}
+
+.homepage .overlay a {
+  font-size: 30px;
+}
+
+/* projects */
+.projects {
+  background: url("./showcase.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/* contacts */
+.contacts {
+  background: url("./showcase.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.contacts ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* scaling down text and properties */
+@media (max-width: 992px) {
+  .homepage .overlay h1 {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu-btn {
+    right: 30px;
+  }
+  .homepage .overlay h1 {
+    font-size: 30px;
+  }
+
+    .homepage .overlay p {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    
+    .homepage .overlay ul li a {
+      font-size: 24px;
+    }
+    
 }
