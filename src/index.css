@@ -1,13 +1,47 @@
-body {
+
+
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+/* 100% so images don't overflow */
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+
+a {
+  font-family: inherit;
+/* inherit checks which font family is in body and places it in anchor as well */
+  text-decoration: none;
+}
+
+/* homepage */
+.homepage {
+  background: url("./showcase.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+}
+
+.homepage .overlay {
+  background-image: var(--background-image);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }

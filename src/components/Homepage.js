@@ -15,7 +15,7 @@ const Homepage = () => {
 								rel="noopenner noreferrer"
 							>
 							{/* this code will make the link open in a new tab: target="_blank" rel="noopenner noreferrer */}
-								{"Github"}
+								{"Github "}
 								<FaGithub />
 							</a>
 						</li>
@@ -25,7 +25,7 @@ const Homepage = () => {
 								target="_blank"
 								rel="noopenner noreferrer"
 							>
-								{"LinkedIn"}
+								{"LinkedIn "}
 								<FaLinkedin />
 							</a>
 						</li>
