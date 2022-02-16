@@ -1,4 +1,4 @@
-import {FaGithub, FaLinkedin, FaLinkedinIn} from "react-icons/fa"
+import {FaGithub, FaLinkedin} from "react-icons/fa"
 const Homepage = () => {
   return (
 		<>
