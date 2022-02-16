@@ -1,3 +1,4 @@
+import {FaPhone, FaEnvelope} from "react-icons/fa"
 const Contacts = () => {
   return (
 		<>
@@ -7,14 +8,13 @@ const Contacts = () => {
 
 				<ul>
 					<li>
-						<a href="tel:2099868880">(209) 986-8880</a>
+						<a href="tel:2099868880"><FaPhone/>(209) 986-8880</a>
 					</li>
 					<li>
-						<a href="mailto:rylidavis94@gmail.com">rylidavis94@gmail.com</a>
+						<a href="mailto:rylidavis94@gmail.com"><FaEnvelope />{" "}rylidavis94@gmail.com</a>
 					</li>
 				</ul>
 			</section>
-			<div>Contacts</div>
 		</>
 	);
 }

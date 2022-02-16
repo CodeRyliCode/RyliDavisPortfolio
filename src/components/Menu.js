@@ -6,7 +6,8 @@ import { navbar } from "../data/navbar";
 // set up state values which is going to control whether header is open or closed
 const Menu = () => {
 	const [isOpen, setIsOpen] = useState(false);
-	const [links] = useState(navbar);
+	//eslint-disable-next-line
+	const [links, setLinks] = useState(navbar);
 
 	// isOpen is state value and setIsOpen is function. This function controls how we access this state value.state value set to false by default
 	return (
