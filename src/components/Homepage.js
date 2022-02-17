@@ -5,7 +5,7 @@ const Homepage = () => {
 			<section className="homepage">
 				<div className="overlay">
 					<h1>Ryli Davis</h1>
-					<p>Front-end Web Developer</p>
+					<p>Full Stack Web Developer</p>
 
 					<ul>
 						<li>
@@ -30,6 +30,12 @@ const Homepage = () => {
 							</a>
 						</li>
 					</ul>
+					<a
+								href="./images/FullstackCertificate.pdf
+								"
+								target="_blank"
+								rel="noopenner noreferrer"
+							><h4>Nucamp Fullstack Certificate</h4></a>
 				</div>
 			</section>
 		</>
